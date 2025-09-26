@@ -1,0 +1,17 @@
+{
+  "name": "mqtteam-message-archiver",
+  "version": "1.0",
+  "description": "BackendServer for MQTT chat archiving",
+  "main": "mqtt.js",
+  "scripts": {
+    "start": "node mqtt.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "mqtt": "^5.7.0",
+    "pg": "^8.12.0",
+    "prom-client": "^15.1.2",
+    "redis": "^4.6.14"
+  }
+}
