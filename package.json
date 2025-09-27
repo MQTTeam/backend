@@ -1,17 +1,42 @@
 {
-  "name": "mqtteam-message-archiver",
-  "version": "1.0",
-  "description": "BackendServer for MQTT chat archiving",
-  "main": "mqtt.js",
+  "name": "mqtt-chat-archiver",
+  "version": "2.0",
+  "description": "MQTT 기반 채팅 메시지 아카이버 서버",
+  "main": "app.js",
   "scripts": {
-    "start": "node mqtt.js"
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
+  "keywords": [
+    "mqtt",
+    "chat",
+    "archiver",
+    "node.js",
+    "express",
+    "postgresql",
+    "redis"
+  ],
+  "author": "Seyoon-Lee",
+  "license": "MIT",
   "dependencies": {
+    "express": "^4.18.2",
+    "mqtt": "^4.3.7",
     "cors": "^2.8.5",
-    "express": "^4.19.2",
-    "mqtt": "^5.7.0",
-    "pg": "^8.12.0",
-    "prom-client": "^15.1.2",
-    "redis": "^4.6.14"
+    "pg": "^8.11.0",
+    "redis": "^4.6.7",
+    "prom-client": "^14.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22",
+    "jest": "^29.5.0",
+    "eslint": "^8.41.0",
+    "supertest": "^6.3.3"
+  },
+  "engines": {
+    "node": ">=16.0.0"
   }
 }

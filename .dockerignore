@@ -1,0 +1,12 @@
+# Node.js 의존성 폴더
+node_modules
+
+# 운영체제별 시스템 파일
+.DS_Store
+npm-debug.log
+
+# 환경변수 파일 (보안상 이미지에 포함하지 않음)
+.env
+
+# README 파일 (운영에 불필요)
+README.md
